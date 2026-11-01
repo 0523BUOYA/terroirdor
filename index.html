@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Terroir Doré – Huile d’argan du Maroc</title>
+<style>
+:root{--bg:#fffaf0;--surface:#ffffff;--text:#2b2416;--muted:#6b5f48;--gold:#c8870a;--olive:#4f5d2a;--line:#eadfc6;--on-gold:#ffffff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1710;--surface:#26210f;--text:#f4ecd8;--muted:#b9ad92;--gold:#e8a62b;--olive:#a9b86a;--line:#3a3320;--on-gold:#1b1710;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1710;--surface:#26210f;--text:#f4ecd8;--muted:#b9ad92;--gold:#e8a62b;--olive:#a9b86a;--line:#3a3320;--on-gold:#1b1710;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+.ship{background:var(--olive);color:var(--on-gold);text-align:center;padding:9px 14px;font-family:system-ui,sans-serif;font-size:.92rem;font-weight:600}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;flex-wrap:wrap;gap:10px}
+.logo{font-size:1.3rem;font-weight:bold;color:var(--gold)}
+nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+nav a{color:var(--text);text-decoration:none;margin-left:18px;font-family:system-ui,sans-serif;font-size:.95rem}
+.lang{margin-left:18px;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-family:system-ui,sans-serif;font-weight:600;cursor:pointer;font-size:.85rem}
+.hero{text-align:center;padding:56px 0 48px}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.15;margin:0 0 16px}
+.hero p{max-width:560px;margin:0 auto 26px;color:var(--muted);font-size:1.1rem}
+.btn{display:inline-block;background:var(--gold);color:var(--on-gold);padding:13px 26px;border-radius:999px;text-decoration:none;font-family:system-ui,sans-serif;font-weight:600;border:0;cursor:pointer;font-size:1rem}
+section{padding:40px 0}
+h2{font-size:1.8rem;margin:0 0 24px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center}
+.card .ico{font-size:3rem}
+.card h3{margin:8px 0 6px}
+.card p{color:var(--muted);margin:0 0 12px;font-size:.97rem}
+.price{display:block;font-family:system-ui,sans-serif;font-weight:700;color:var(--olive);margin-bottom:14px}
+.vals .card{padding:18px}
+.about{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;text-align:center;max-width:680px;margin:0 auto;color:var(--muted)}
+form{max-width:520px;margin:0 auto;display:grid;gap:12px}
+input,textarea,select{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit}
+.wa{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:#fff;text-decoration:none;font-family:system-ui,sans-serif;font-weight:600;padding:12px 22px;border-radius:999px}
+.wa svg{width:22px;height:22px}
+.wa-s{padding:8px 14px;font-size:.9rem;margin-left:18px}
+.wa-s svg{width:18px;height:18px}
+.alt{text-align:center;margin-top:18px;color:var(--muted)}
+footer a{color:inherit}
+footer{text-align:center;color:var(--muted);padding:30px 0;font-family:system-ui,sans-serif;font-size:.9rem;border-top:1px solid var(--line);margin-top:30px}
+</style>
+</head>
+<body>
+<div class="ship" data-i18n="ship">🚚 Livraison : France · Espagne · Belgique · Pays-Bas</div>
+<div class="wrap">
+<header><div class="logo">🍯 Terroir Doré</div>
+<nav><a href="#produits" data-i18n="n1">Produits</a><a href="#apropos" data-i18n="n2">À propos</a><a href="#commande" data-i18n="n3">Commander</a>
+<a class="wa wa-s" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.8"/><g transform="translate(6.2 6.2) scale(.5)"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></g></svg>WhatsApp</a>
+<button class="lang" id="lang" type="button" aria-label="Language">EN</button></nav></header>
+
+<div class="hero">
+<h1 data-i18n="h1">L’huile d’argan authentique<br>du Maroc, livrée chez vous</h1>
+<p data-i18n="hp">Une huile d’argan pure, pressée à froid au Maroc, pour votre cuisine et vos soins. Découvrez aussi notre miel naturel.</p>
+<a class="btn" href="#produits" data-i18n="cta">Découvrir nos produits</a>
+</div>
+
+<section id="produits">
+<h2 data-i18n="ph">Nos produits</h2>
+<div class="grid">
+<div class="card"><div class="ico">🌰</div><h3 data-i18n="a1">Huile d’argan alimentaire</h3><p data-i18n="a1d">Huile d’argan vierge aux noix grillées, pressée à froid. Idéale sur salades, pain et plats. Flacon de 100 ml.</p><span class="price" data-i18n="a1p">À partir de 18 €</span><a class="btn" href="#commande" data-p="food" data-i18n="buy">Commander</a></div>
+<div class="card"><div class="ico">✨</div><h3 data-i18n="a2">Huile d’argan cosmétique</h3><p data-i18n="a2d">Huile d’argan pure à base de noix non grillées, pour la peau, les cheveux et les ongles. Flacon de 50 ml.</p><span class="price" data-i18n="a2p">À partir de 15 €</span><a class="btn" href="#commande" data-p="cosm" data-i18n="buy">Commander</a></div>
+<div class="card"><div class="ico">🍯</div><h3 data-i18n="a3">Miel naturel</h3><p data-i18n="a3d">Miel pur, non chauffé, récolté de façon artisanale. Pot de 500 g.</p><span class="price" data-i18n="a3p">À partir de 12 €</span><a class="btn" href="#commande" data-p="honey" data-i18n="buy">Commander</a></div>
+<div class="card"><div class="ico">🎁</div><h3 data-i18n="a4">Coffret argan &amp; miel</h3><p data-i18n="a4d">Une huile d’argan alimentaire et un pot de miel, parfait pour offrir.</p><span class="price" data-i18n="a4p">À partir de 28 €</span><a class="btn" href="#commande" data-p="box" data-i18n="buy">Commander</a></div>
+</div>
+</section>
+
+<section class="vals">
+<div class="grid">
+<div class="card"><h3 data-i18n="v1">100 % pure</h3><p data-i18n="v1d">Sans additifs, sans mélange.</p></div>
+<div class="card"><h3 data-i18n="v2">Origine Maroc</h3><p data-i18n="v2d">Noix d’arganier du Sud marocain, pressées à froid selon un savoir-faire traditionnel.</p></div>
+<div class="card"><h3 data-i18n="v3">Livraison en Europe</h3><p data-i18n="v3d">France, Espagne, Belgique et Pays-Bas, avec un emballage soigné.</p></div>
+</div>
+</section>
+
+<section id="paiement">
+<h2 data-i18n="yh">Paiement</h2>
+<p class="alt"><a class="wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.8"/><g transform="translate(6.2 6.2) scale(.5)"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></g></svg><span data-i18n="wab">Commander sur WhatsApp</span></a></p>
+</section>
+
+<section id="apropos">
+<h2 data-i18n="ab">Notre histoire</h2>
+<div class="about" data-i18n="abp">L’arganier ne pousse presque qu’au Maroc, et son huile précieuse est produite depuis des générations. Nous la faisons venir directement du Maroc, sans compromis sur la qualité : une huile authentique, pour la cuisine comme pour les soins de beauté. Nous proposons aussi un miel naturel de la même région.</div>
+</section>
+
+<section id="commande">
+<h2 data-i18n="oh">Passer commande</h2>
+<form id="f">
+<input id="n" data-ph="pn" placeholder="Votre nom" required>
+<input id="a" data-ph="pa" placeholder="Adresse de livraison" required>
+<select id="p"><option value="food" data-i18n="a1">Huile d’argan alimentaire</option><option value="cosm" data-i18n="a2">Huile d’argan cosmétique</option><option value="honey" data-i18n="a3">Miel naturel</option><option value="box" data-i18n="a4">Coffret argan &amp; miel</option></select>
+<input id="q" type="number" min="1" value="1" aria-label="Quantité / Quantity">
+<textarea id="m" rows="3" data-ph="pm" placeholder="Message (facultatif)"></textarea>
+<button class="btn" type="submit" data-i18n="sub">Envoyer ma commande sur WhatsApp</button>
+</form>
+<p class="alt"><span data-i18n="or">ou écrivez-nous directement :</span><br><br><a class="wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.8"/><g transform="translate(6.2 6.2) scale(.5)"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></g></svg><span data-i18n="wab">Commander sur WhatsApp</span></a></p>
+</section>
+
+<footer>© Terroir Doré · WhatsApp : <a href="https://wa.me/212646731242" target="_blank" rel="noopener">+212 6 46 73 12 42</a></footer>
+</div>
+<script>
+var N='212646731242';
+var T={
+fr:{title:'Terroir Doré – Huile d’argan du Maroc',ship:'🚚 Livraison : France · Espagne · Belgique · Pays-Bas',n1:'Produits',n2:'À propos',n3:'Commander',
+h1:'L’huile d’argan authentique<br>du Maroc, livrée chez vous',hp:'Une huile d’argan pure, pressée à froid au Maroc, pour votre cuisine et vos soins. Découvrez aussi notre miel naturel.',cta:'Découvrir nos produits',
+ph:'Nos produits',buy:'Commander',
+a1:'Huile d’argan alimentaire',a1d:'Huile d’argan vierge aux noix grillées, pressée à froid. Idéale sur salades, pain et plats. Flacon de 100 ml.',a1p:'À partir de 18 €',
+a2:'Huile d’argan cosmétique',a2d:'Huile d’argan pure à base de noix non grillées, pour la peau, les cheveux et les ongles. Flacon de 50 ml.',a2p:'À partir de 15 €',
+a3:'Miel naturel',a3d:'Miel pur, non chauffé, récolté de façon artisanale. Pot de 500 g.',a3p:'À partir de 12 €',
+a4:'Coffret argan &amp; miel',a4d:'Une huile d’argan alimentaire et un pot de miel, parfait pour offrir.',a4p:'À partir de 28 €',
+v1:'100 % pure',v1d:'Sans additifs, sans mélange.',v2:'Origine Maroc',v2d:'Noix d’arganier du Sud marocain, pressées à froid selon un savoir-faire traditionnel.',
+v3:'Livraison en Europe',v3d:'France, Espagne, Belgique et Pays-Bas, avec un emballage soigné.',
+yh:'Paiement',y1:'1. Confirmation sur WhatsApp',y1d:'Nous confirmons votre commande, le stock et les frais de livraison.',y3:'2. Revolut ou Wise',y3d:'Une fois la commande confirmée, vous payez depuis votre compte Revolut ou Wise.',ab:'Notre histoire',abp:'L’arganier ne pousse presque qu’au Maroc, et son huile précieuse est produite depuis des générations. Nous la faisons venir directement du Maroc, sans compromis sur la qualité : une huile authentique, pour la cuisine comme pour les soins de beauté. Nous proposons aussi un miel naturel de la même région.',
+oh:'Passer commande',pn:'Votre nom',pa:'Adresse de livraison',pm:'Message (facultatif)',sub:'Envoyer ma commande sur WhatsApp',or:'ou écrivez-nous directement :',wab:'Commander sur WhatsApp',
+wamsg:'Bonjour, je souhaite commander de l’huile d’argan',mi:'Bonjour, je souhaite passer commande.',mn:'Nom',ma:'Adresse de livraison',mp:'Produit',mq:'Quantité',mm:'Message',btn:'EN'},
+en:{title:'Terroir Doré – Moroccan Argan Oil',ship:'🚚 Shipping to: France · Spain · Belgium · Netherlands',n1:'Products',n2:'About',n3:'Order',
+h1:'Authentic argan oil<br>from Morocco, delivered to your door',hp:'Pure argan oil, cold-pressed in Morocco, for your kitchen and your skincare. Discover our natural honey too.',cta:'Discover our products',
+ph:'Our products',buy:'Order',
+a1:'Culinary argan oil',a1d:'Virgin argan oil from roasted kernels, cold-pressed. Perfect on salads, bread and dishes. 100 ml bottle.',a1p:'From 18 €',
+a2:'Cosmetic argan oil',a2d:'Pure argan oil from unroasted kernels, for skin, hair and nails. 50 ml bottle.',a2p:'From 15 €',
+a3:'Natural honey',a3d:'Pure, unheated honey, harvested the traditional way. 500 g jar.',a3p:'From 12 €',
+a4:'Argan &amp; honey gift set',a4d:'A culinary argan oil and a jar of honey, perfect as a gift.',a4p:'From 28 €',
+v1:'100% pure',v1d:'No additives, no blending.',v2:'Origin Morocco',v2d:'Argan kernels from southern Morocco, cold-pressed using traditional know-how.',
+v3:'Shipping across Europe',v3d:'France, Spain, Belgium and the Netherlands, with careful packaging.',
+yh:'Payment',y1:'1. Confirmation on WhatsApp',y1d:'We confirm your order, stock availability and shipping cost.',y3:'2. Revolut or Wise',y3d:'Once your order is confirmed, you pay from your Revolut or Wise account.',ab:'Our story',abp:'The argan tree grows almost only in Morocco, and its precious oil has been made for generations. We bring it directly from Morocco with no compromise on quality: an authentic oil, for cooking as well as beauty care. We also offer a natural honey from the same region.',
+oh:'Place an order',pn:'Your name',pa:'Delivery address',pm:'Message (optional)',sub:'Send my order on WhatsApp',or:'or message us directly:',wab:'Order on WhatsApp',
+wamsg:'Hello, I would like to order argan oil',mi:'Hello, I would like to place an order.',mn:'Name',ma:'Delivery address',mp:'Product',mq:'Quantity',mm:'Message',btn:'FR'}
+};
+var L='fr';
+try{var s=localStorage.getItem('lang');if(s==='en'||s==='fr')L=s;}catch(e){}
+function setLang(l){
+L=l;var d=T[l];document.documentElement.lang=l;document.title=d.title;
+document.querySelectorAll('[data-i18n]').forEach(function(e){e.innerHTML=d[e.getAttribute('data-i18n')]});
+document.querySelectorAll('[data-ph]').forEach(function(e){e.placeholder=d[e.getAttribute('data-ph')]});
+document.querySelectorAll('a.wa').forEach(function(a){a.href='https://wa.me/'+N+'?text='+encodeURIComponent(d.wamsg)});
+document.getElementById('lang').textContent=d.btn;
+try{localStorage.setItem('lang',l)}catch(e){}
+}
+document.getElementById('lang').addEventListener('click',function(){setLang(L==='fr'?'en':'fr')});
+document.querySelectorAll('[data-p]').forEach(function(b){b.addEventListener('click',function(){document.getElementById('p').value=b.getAttribute('data-p')})});
+document.getElementById('f').addEventListener('submit',function(e){
+e.preventDefault();var d=T[L];var g=function(i){return document.getElementById(i).value};
+var sel=document.getElementById('p');var prod=sel.options[sel.selectedIndex].textContent;
+var msg=d.mi+'\n'+d.mn+': '+g('n')+'\n'+d.ma+': '+g('a')+'\n'+d.mp+': '+prod+'\n'+d.mq+': '+g('q')+(g('m')?'\n'+d.mm+': '+g('m'):'');
+window.open('https://wa.me/'+N+'?text='+encodeURIComponent(msg),'_blank');
+});
+setLang(L);
+</script>
+</body>
+</html>
